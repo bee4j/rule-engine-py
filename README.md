@@ -25,5 +25,5 @@ Rule Engine By Python
       - MongoDB 6.x
 ### 三、架构设计
    - 产品架构
-     ![风控中心1 0(产品架构)](https://github.com/user-attachments/assets/db3dab90-b8f6-4fc7-bc19-9836dbdff1f2)
+     ![风控中心1 0(产品架构)](https://github.com/user-attachments/assets/db7d32ed-a8fc-4e8d-9f69-b66e7fc9e1ed)
    - 系统架构
