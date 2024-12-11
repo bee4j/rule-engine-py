@@ -50,6 +50,7 @@
          - 提示输入密码 111111
          - 提示确认密码 111111
       - **登陆地址**： http://127.0.0.1:8000/admin
+### 其它配置： 
 
 ## 创建Django应用
    - 在命令行输入命令： python manage.py startapp rule
