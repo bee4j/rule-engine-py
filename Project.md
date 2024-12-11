@@ -36,23 +36,29 @@
    - 在命令行输入命令
       - **安装依赖**： pip3 install pymysql
    - 配置Django应用
-      - **指定DB**： 在settings.py文件中修改默认DB，这里使用MySQL。
+      - **指定DB**： 在settings.py文件中修改默认DB配置，这里使用MySQL。
       - **导入驱动**： 在__init__.py文件中导入MySQL驱动。
    - 初始化Django框架基本表结构
       - python manage.py migrate
-### 创建Django超级管理员账号
-    - python manage.py createsuperuser
-        - 提示创建账号 admin
-        - 提示输入邮箱 
-        - 提示输入密码 111111
-        - 提示确认密码 111111
-    - 登录地址 http://127.0.0.1:8000/admin
-        - 模块配置 在apps.py
-        - 模块注册 在settings.py里INSTALLED_APPS
-        - 视图配置 CURD
-        - 视图绑定 在urls.py里的urlpatterns，将views.py和URL绑定，默认页面将不会再展示
-        - 在manage.py同级目录创建应用(这个应用可以作为顶级模块导入，而不是项目的子模块)
-            - **创建模块**： python manage.py startapp rule
-            - **定义模型**： python manage.py makemigrations rule
-            - **创建模型**： python manage.py migrate rule --run-syncdb
+   - 创建Django超级管理员账号
+      - **输入命令**： python manage.py createsuperuser
+         - 提示创建账号 admin
+         - 提示输入邮箱 
+         - 提示输入密码 111111
+         - 提示确认密码 111111
+      - **登陆地址**： http://127.0.0.1:8000/admin
+
+## 创建Django模型
+### 模型配置
+   - **修改apps.py**： 
+   - **修改settings.py**： 修改INSTALLED_APPS
+### 模型注册
+   - **修改admin.py**： admin.site.register(rule)
+### 视图配置 CURD
+### 视图绑定
+   - **修改urls.py**：  修改urlpatterns，将views.py和URL绑定，默认页面将不会再展示
+### 在manage.py同级目录创建应用(这个应用可以作为顶级模块导入，而不是项目的子模块)
+   - **创建模型**： python manage.py makemigrations rule
+   - **更新模型**： python manage.py migrate rule --run-syncdb
+
 ## 在Pycharm社区版提交项目：git push
