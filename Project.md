@@ -54,7 +54,8 @@
    - **修改settings.py**： 修改INSTALLED_APPS
 ### 模型注册
    - **修改admin.py**： admin.site.register(rule)
-### 视图配置 CURD
+### 视图配置
+   - **修改views.py**：  
 ### 视图绑定
    - **修改urls.py**：  修改urlpatterns，将views.py和URL绑定，默认页面将不会再展示
 ### 在manage.py同级目录创建应用(这个应用可以作为顶级模块导入，而不是项目的子模块)
