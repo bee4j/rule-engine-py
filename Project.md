@@ -26,7 +26,8 @@
       - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
    - 默认访问地址： http://127.0.0.1:8000/
 ## 创建Django应用
-### Django框架
+### 在命令行输入命令： python manage.py startapp rule
+## 配置Django应用
     - 默认DB使用SQLite3，模块内settings.py修改默认DB，这里使用MySQL
     - 模块内__init__.py导入MySQL驱动
     - 初始化Django框架依赖的基本表结构
