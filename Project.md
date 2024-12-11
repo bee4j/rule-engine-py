@@ -60,7 +60,7 @@
 
 ## 创建Django模型
 ### 模型配置
-   - **修改rule/models.py**：定义模型
+   - **修改rule/models.py**：定义模型(如事件、基础字段、扩展字段、特征字段、评分规则、策略集合等数据模型)
    - **修改rule/apps.py**： 
    - **修改rule/settings.py**： INSTALLED_APPS列表中新增rule应用
 ### 模型注册： 将某个模型注册到Django管理后台，以便在管理界面进行CURD操作
