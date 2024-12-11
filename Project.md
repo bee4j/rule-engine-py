@@ -4,17 +4,19 @@
    - 官网文档： https://www.python.org 
    - 验证安装： 控制台输入命令 Python
    - 退出命令： 控制台输入命令 exit(0)
+
 ## 初始化代码库
    - 在Github或Gitee创建一个空项目
    - 在Pycharm社区版下载这个项目
+
 ## 安装Django 5.1.11
 ### 官网文档：
    - https://www.djangoproject.com
    - https://docs.djangoproject.com/zh-hans/5.1
    - https://www.runoob.com/django/django-install.html
-### 安装Django及其依赖
+### 安装Django
    - python -m pip install Django
-   - pip3 install pymysql
+
 ## 创建Django项目
 ### 在命令行输入命令： django-admin startproject bootstrap
 ### 项目结构： 按照个人习惯，不要中间层bootstrap目录
@@ -25,13 +27,19 @@
    - 在Pycharm社区版配置
       - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
    - 默认访问地址： http://127.0.0.1:8000/
+
 ## 创建Django应用
-### 在命令行输入命令： python manage.py startapp rule
+   - 在命令行输入命令： python manage.py startapp rule
+
 ## 配置Django应用
-    - 默认DB使用SQLite3，模块内settings.py修改默认DB，这里使用MySQL
-    - 模块内__init__.py导入MySQL驱动
-    - 初始化Django框架依赖的基本表结构
-        - python manage.py migrate
+### DB配置： 默认DB使用SQLite3，这里使用MySQL
+   - 在命令行输入命令
+      - **安装依赖**： pip3 install pymysql
+   - 配置Django应用
+      - **指定DB**： 在settings.py文件中修改默认DB，这里使用MySQL。
+      - **导入驱动**： 在__init__.py文件中导入MySQL驱动。
+   - 初始化Django框架基本表结构
+      - python manage.py migrate
 ### 创建Django超级管理员账号
     - python manage.py createsuperuser
         - 提示创建账号 admin
