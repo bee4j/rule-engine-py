@@ -22,12 +22,15 @@
 
 ## 创建Django项目
 ### 在命令行输入命令： django-admin startproject bootstrap
-### 项目结构： 按照个人习惯，不要中间层bootstrap目录
+### 项目结构： 
+   - 按照个人习惯，不要中间层bootstrap目录
 ### 项目启动： 
    - 在命令行输入命令
       - **项目启动**： python manage.py runserver
       - **项目停止**： Ctrl + C
    - 在Pycharm社区版配置
+      - Edit Configurations/选择工作目录
+      - Edit Configurations/选择执行脚本manage.py
       - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
    - 默认访问地址： http://127.0.0.1:8000/
 
@@ -53,8 +56,9 @@
 
 ## 创建Django模型
 ### 模型配置
+   - **修改models.py**： 定义模型
    - **修改apps.py**： 
-   - **修改settings.py**： 修改INSTALLED_APPS
+   - **修改settings.py**： 修改INSTALLED_APPS列表
 ### 模型注册
    - **修改admin.py**： admin.site.register(rule)
 ### 视图配置
