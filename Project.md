@@ -62,7 +62,7 @@
 ### 模型配置
    - **修改rule/models.py**：定义模型
    - **修改rule/apps.py**： 
-   - **修改rule/settings.py**： 修改INSTALLED_APPS列表
+   - **修改rule/settings.py**： INSTALLED_APPS列表中新增rule应用
 ### 模型注册
    - **修改rule/admin.py**： admin.site.register(rule)
 ### 视图配置
@@ -70,7 +70,7 @@
 ### 视图绑定
    - **修改rule/urls.py**：  修改urlpatterns，将views.py和URL绑定，默认页面将不会再展示
 ### 在manage.py同级目录创建应用(这个应用可以作为顶级模块导入，而不是项目的子模块)
-   - **创建模型**： python manage.py makemigrations rule
-   - **更新模型**： python manage.py migrate rule --run-syncdb
+   - **模型同步创建到DB**： python manage.py makemigrations rule
+   - **模型同步更新到DB**： python manage.py migrate rule --run-syncdb
 
 ## 在Pycharm社区版提交项目：git push
