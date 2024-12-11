@@ -14,6 +14,9 @@
    - https://www.djangoproject.com
    - https://docs.djangoproject.com/zh-hans/5.1
    - https://www.runoob.com/django/django-install.html
+### 它遵循MVC(模型-视图-控制器)架构模式
+   - 在Django中，部署的是项目，一个项目可以拆分多个应用，每一个应用是一个独立的聚合模块。
+   - 在Django中，主目录负责处理项目的初始化操作以及请求的分发，而具体的请求是由各个应用去处理。
 ### 安装Django
    - python -m pip install Django
 
