@@ -1,13 +1,24 @@
 # 项目搭建
 
-## 安装Python 3.12.6运行环境：https://www.python.org 
-   - 验证安装： Python
-   - 退出命令： exit(0)
-## Django 5.1.4 框架描述
-    - https://www.djangoproject.com
-    - https://docs.djangoproject.com/zh-hans/5.1
-    - https://www.runoob.com/django/django-install.html
-## 创建项目
+## 安装Python 3.12.6
+   - 官网文档： https://www.python.org 
+   - 验证安装： 控制台输入命令 Python
+   - 退出命令： 控制台输入命令 exit(0)
+## 初始化代码库
+   - 在Github或Gitee创建一个空项目
+   - 在Pycharm社区版下载这个项目
+## 安装Django 5.1.11
+   - 官网文档：
+      - https://www.djangoproject.com
+      - https://docs.djangoproject.com/zh-hans/5.1
+      - https://www.runoob.com/django/django-install.html
+   - 安装Django及其依赖(默认DB使用SQLite3)
+      - python -m pip install Django
+      - pip3 install pymysql
+   - 在命令行初始化Django项目
+      - django-admin startproject bootstrap
+   - 默认访问地址： http://127.0.0.1:8000/
+## 创建Django项目
     - 在Github创建一个空项目
     - 在Pycharm社区版下载这个项目
     - 安装Django 5.1.4 框架及框架依赖
