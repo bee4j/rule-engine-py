@@ -41,6 +41,7 @@
    - 配置Django应用
       - **bootstrap/settings.py**： 修改DB配置，这里使用MySQL。
       - **bootstrap/__init__.py**： 导入MySQL驱动。
+      - **bootstrap/apps.py**： 项目配置
       - **bootstrap/views.py**： 项目视图
       - **bootstrap/urls.py**： 项目资源路径/请求分发处理
    - 初始化Django框架基本表结构
