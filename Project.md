@@ -22,6 +22,7 @@
 
 ## 创建Django项目
 ### 在命令行输入命令： django-admin startproject bootstrap
+   - 默认会创建项目根目录和一个同名的应用模块
 ### 项目结构： 
    - 按照个人习惯，不要中间层bootstrap目录
 ### 项目启动： 
@@ -38,7 +39,7 @@
 ### DB配置： 默认DB使用SQLite3，这里使用MySQL
    - 在命令行输入命令
       - **安装依赖**： pip3 install pymysql
-   - 配置Django应用
+   - 配置Django项目(主应用)
       - **bootstrap/settings.py**： 修改DB配置，这里使用MySQL。
       - **bootstrap/__init__.py**： 导入MySQL驱动。
       - **bootstrap/apps.py**： 项目配置
