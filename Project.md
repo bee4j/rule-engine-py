@@ -41,6 +41,8 @@
    - 配置Django应用
       - **bootstrap/settings.py**： 修改DB配置，这里使用MySQL。
       - **bootstrap/__init__.py**： 导入MySQL驱动。
+      - **bootstrap/views.py**： 项目视图
+      - **bootstrap/urls.py**： 项目资源路径/请求分发处理
    - 初始化Django框架基本表结构
       - python manage.py migrate
    - 创建Django超级管理员账号
@@ -52,12 +54,12 @@
       - **登陆地址**： http://127.0.0.1:8000/admin
 ### 其它配置： 
 
-## 创建Django应用
+## 创建Django应用(一个项目可以创建多个，每一个应用都是一个独立的功能聚合模块)
    - 在命令行输入命令： python manage.py startapp rule
 
 ## 创建Django模型
-### 模型配置
-   - **修改rule/models.py**： 定义模型
+### 模型定义和配置
+   - **修改rule/models.py**：
    - **修改rule/apps.py**： 
    - **修改rule/settings.py**： 修改INSTALLED_APPS列表
 ### 模型注册
