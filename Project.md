@@ -15,26 +15,16 @@
    - 安装Django及其依赖(默认DB使用SQLite3)
       - python -m pip install Django
       - pip3 install pymysql
-   - 在命令行初始化Django项目
-      - django-admin startproject bootstrap
-   - 默认访问地址： http://127.0.0.1:8000/
 ## 创建Django项目
-    - 在Github创建一个空项目
-    - 在Pycharm社区版下载这个项目
-    - 安装Django 5.1.4 框架及框架依赖
-        - python -m pip install Django
-        - pip3 install pymysql
-    - 在命令行初始化Django项目
-        - django-admin startproject bootstrap
+    - 在命令行输入命令： django-admin startproject bootstrap
+    - 项目结构： 按照个人习惯，不要中间层bootstrap目录
+    - 项目启动： 
+       - 在命令行输入命令
+         - **项目启动**： python manage.py runserver
+         - **项目停止**： Ctrl + C
+       - 在Pycharm社区版配置
+         - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
     - 默认访问地址： http://127.0.0.1:8000/
-## 项目结构
-   - 按照个人习惯，不要中间层bootstrap目录
-## 项目启动
-   - 在Pycharm社区版命令行
-     - **项目启动**： python manage.py runserver
-     - **项目停止**： Ctrl + C
-   - 在Pycharm社区版配置
-     - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
 ## 项目开发
 ### Django框架
     - 默认DB使用SQLite3，模块内settings.py修改默认DB，这里使用MySQL
