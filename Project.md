@@ -63,8 +63,10 @@
    - **修改rule/models.py**：定义模型
    - **修改rule/apps.py**： 
    - **修改rule/settings.py**： INSTALLED_APPS列表中新增rule应用
-### 模型注册
-   - **修改rule/admin.py**： admin.site.register(rule)
+### 模型注册： 将某个模型注册到Django管理后台，以便在管理界面进行CURD操作
+   - **修改rule/admin.py**：两种方式
+      - admin.site.register(模型名称)
+      - @admin.register(模型名称)，可以定义页面列表元数据、查询条件、分页参数等。
 ### 视图配置
    - **修改rule/views.py**：  
 ### 视图绑定
