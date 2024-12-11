@@ -34,16 +34,13 @@
       - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
    - 默认访问地址： http://127.0.0.1:8000/
 
-## 创建Django应用
-   - 在命令行输入命令： python manage.py startapp rule
-
-## 配置Django应用
+## 配置Django项目
 ### DB配置： 默认DB使用SQLite3，这里使用MySQL
    - 在命令行输入命令
       - **安装依赖**： pip3 install pymysql
    - 配置Django应用
-      - **指定DB**： 在settings.py文件中修改默认DB配置，这里使用MySQL。
-      - **导入驱动**： 在__init__.py文件中导入MySQL驱动。
+      - **bootstrap/settings.py**： 修改DB配置，这里使用MySQL。
+      - **bootstrap/__init__.py**： 导入MySQL驱动。
    - 初始化Django框架基本表结构
       - python manage.py migrate
    - 创建Django超级管理员账号
@@ -54,17 +51,20 @@
          - 提示确认密码 111111
       - **登陆地址**： http://127.0.0.1:8000/admin
 
+## 创建Django应用
+   - 在命令行输入命令： python manage.py startapp rule
+
 ## 创建Django模型
 ### 模型配置
-   - **修改models.py**： 定义模型
-   - **修改apps.py**： 
-   - **修改settings.py**： 修改INSTALLED_APPS列表
+   - **修改rule/models.py**： 定义模型
+   - **修改rule/apps.py**： 
+   - **修改rule/settings.py**： 修改INSTALLED_APPS列表
 ### 模型注册
-   - **修改admin.py**： admin.site.register(rule)
+   - **修改rule/admin.py**： admin.site.register(rule)
 ### 视图配置
-   - **修改views.py**：  
+   - **修改rule/views.py**：  
 ### 视图绑定
-   - **修改urls.py**：  修改urlpatterns，将views.py和URL绑定，默认页面将不会再展示
+   - **修改rule/urls.py**：  修改urlpatterns，将views.py和URL绑定，默认页面将不会再展示
 ### 在manage.py同级目录创建应用(这个应用可以作为顶级模块导入，而不是项目的子模块)
    - **创建模型**： python manage.py makemigrations rule
    - **更新模型**： python manage.py migrate rule --run-syncdb
