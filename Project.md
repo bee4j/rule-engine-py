@@ -36,32 +36,31 @@
    - 默认访问地址： http://127.0.0.1:8000/
 
 ## 配置Django项目
-### DB配置： 默认DB使用SQLite3，这里使用MySQL
-   - 在命令行输入命令
-      - **安装依赖**： pip3 install pymysql
-   - 配置Django项目(主应用)
-      - **bootstrap/settings.py**： 修改DB配置，这里使用MySQL。
-      - **bootstrap/__init__.py**： 导入MySQL驱动。
-      - **bootstrap/apps.py**： 项目配置
-      - **bootstrap/views.py**： 项目视图
-      - **bootstrap/urls.py**： 项目资源路径/请求分发处理
-   - 初始化Django框架基本表结构
-      - python manage.py migrate
-   - 创建Django超级管理员账号
-      - **输入命令**： python manage.py createsuperuser
-         - 提示创建账号 admin
-         - 提示输入邮箱 
-         - 提示输入密码 111111
-         - 提示确认密码 111111
-      - **登陆地址**： http://127.0.0.1:8000/admin
+### 默认DB使用SQLite3，这里使用MySQL
+   - 在命令行输入命令： pip3 install pymysql
+### 配置Django项目(把bootstrap理解为一个负责项目配置的主应用)
+   - **bootstrap/settings.py**： 修改DB配置，这里使用MySQL。
+   - **bootstrap/__init__.py**： 导入MySQL驱动。
+   - **bootstrap/apps.py**： 项目配置
+   - **bootstrap/views.py**： 项目视图
+   - **bootstrap/urls.py**： 项目资源路径/请求分发处理
+### 初始化Django框架基本表结构
+   - python manage.py migrate
+### 创建Django超级管理员账号
+   - **输入命令**： python manage.py createsuperuser
+      - 提示创建账号 admin
+      - 提示输入邮箱 
+      - 提示输入密码 111111
+      - 提示确认密码 111111
+### 登陆地址： http://127.0.0.1:8000/admin
 ### 其它配置： 
 
 ## 创建Django应用(一个项目可以创建多个，每一个应用都是一个独立的功能聚合模块)
    - 在命令行输入命令： python manage.py startapp rule
 
 ## 创建Django模型
-### 模型定义和配置
-   - **修改rule/models.py**：
+### 模型配置
+   - **修改rule/models.py**：定义模型
    - **修改rule/apps.py**： 
    - **修改rule/settings.py**： 修改INSTALLED_APPS列表
 ### 模型注册
