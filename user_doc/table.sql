@@ -1,3 +1,5 @@
+# ref table structure, 仅供参考
+
 USE `rule_engine_py`;
 
 /*Table structure for table `activation` */
