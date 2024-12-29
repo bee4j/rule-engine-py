@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from rule import views as rule_views
+from engine import views as rule_views
 
-# 绑定path和views.py 资源访问路径/rule/field
+# 绑定path和views.py 资源访问路径/engine/field
 urlpatterns = [
     path("", rule_views.index, name="规则配置"),
     path("index", rule_views.index, name="模型列表"),
