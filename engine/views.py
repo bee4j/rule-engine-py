@@ -2,12 +2,12 @@ import json
 from django.core.serializers import serialize
 from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render
-from rule.models import RuleModel, RuleField
+from engine.models import Model
 
 # Create your views here.
 
 def index(request):
-    models = RuleModel.objects.all()
+    models = Model.objects.all()
     # print(arr)
     # print(arr[0])
     # print(repr(arr[0]))
@@ -19,6 +19,12 @@ def index(request):
 
 def field(request):
     return HttpResponse("基础字段")
+
+def extend(request):
+    return HttpResponse("扩展字段")
+
+def extend(request):
+    return HttpResponse("扩展字段")
 
 def extend(request):
     return HttpResponse("扩展字段")

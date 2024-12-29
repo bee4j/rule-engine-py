@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.template.defaulttags import url
 from django.urls import path, include
 
 from bootstrap import views
@@ -23,8 +24,9 @@ from bootstrap import views
 urlpatterns = [
     # 配置""替换默认的视图
     path("", views.index, name="bootstrap"),
-    path("register/", views.register, name="注册"),
+    # path("register/", views.register, name="注册"),
     path("login/", views.login, name="登录"),
     path('admin/', admin.site.urls),
-    path("rule/", include("rule.urls"))
+    path("engine/", include("engine.urls")),
+    path("data/", include("data.urls"))
 ]
