@@ -8,12 +8,15 @@ def index(request):
 
 # def verifyCode(request):
 #     return HttpResponse("verifyCode")
-#
+
+def register(request):
+    return HttpResponse("Welcome to Python World! ")
+
 def login(request):
     return HttpResponse("Welcome to Python World! ")
 
 # def logout(request):
 #     return HttpResponse("Welcome login Python World! ")
-#
+
 # def upload(request):
 #     return HttpResponse("Welcome login Python World! ")

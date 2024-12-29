@@ -25,7 +25,7 @@ urlpatterns = [
     # 配置""替换默认的视图
     path("", views.index, name="bootstrap"),
     # path("register/", views.register, name="注册"),
-    path("login/", views.login, name="登录"),
+    # path("login/", views.login, name="登录"),
     path('admin/', admin.site.urls),
     path("engine/", include("engine.urls")),
     path("data/", include("data.urls"))
