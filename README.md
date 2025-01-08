@@ -11,7 +11,7 @@ Rule Engine By Python
       - 同一个网络IP
 ### 二、技术栈
    - 运行环境：Python 3.12.6
-   - 基础框架：Django 5.1.1 
+   - 基础框架：Django 5.1.1
    - 规则存储：MySQL 8.x，配置库
       - 模型定义
       - 基础字段
