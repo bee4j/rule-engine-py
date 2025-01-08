@@ -77,9 +77,10 @@
    - **模型同步更新到DB**： python manage.py migrate rule --run-syncdb
 
 ## 依赖清单：pip freeze > requirements.txt
+
 ## 提交项目：git push
 
-## 安装依赖(首次下载)
+## 安装依赖
     - pip install --upgrade pip
     - pip install --upgrade pip setuptools
     - pip install -r requirements.txt
