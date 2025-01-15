@@ -3,7 +3,7 @@
 ## 基础环境
      - Python 3.12.6
      - Django 5.1.11
-     - pymysql 
+     - pymysql 1.1.1
      
 ## 环境隔离
      - 创建虚拟环境：python -m venv venv
@@ -15,12 +15,12 @@
 
 ## 框架说明
 ### 官网文档
-   - https://www.djangoproject.com
-   - https://docs.djangoproject.com/zh-hans/5.1
-   - https://www.runoob.com/django/django-install.html
+     - https://www.djangoproject.com
+     - https://docs.djangoproject.com/zh-hans/5.1
+     - https://www.runoob.com/django/django-install.html
 ### 它遵循MVC(模型-视图-模版/控制器)架构模式
-   - 在Django中，部署的是项目，一个项目可以拆分多个应用，每一个应用是一个独立的聚合模块。
-   - 在Django中，主目录负责处理项目的初始化操作以及请求的分发，而具体的请求是由各个应用去处理。
+     - 在Django中，部署的是项目，一个项目可以拆分多个应用，每一个应用是一个独立的聚合模块。
+     - 在Django中，主目录负责处理项目的初始化操作以及请求的分发，而具体的请求是由各个应用去处理。
 ### 它自带一套管理后台模版，很适合做B端的管理系统
 
 ## 创建项目
@@ -32,13 +32,13 @@
      - 默认创建项目根目录和一个同名的应用模块
      - 按照个人习惯，不要中间层bootstrap目录
 ### 项目启动
-   - 在命令行输入命令
-      - 项目启动： python manage.py runserver
-      - 项目停止： Ctrl + C
-   - 在Pycharm社区版配置
-      - Edit Configurations/选择工作目录
-      - Edit Configurations/选择执行脚本manage.py
-      - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
+     - 在命令行输入命令
+          - 项目启动： python manage.py runserver
+          - 项目停止： Ctrl + C
+     - 在Pycharm社区版配置
+          - Edit Configurations/选择工作目录
+          - Edit Configurations/选择执行脚本manage.py
+          - Edit Configurations/script parameters配置项输入: runserver 127.0.0.1:8000
 ### 默认地址：http://127.0.0.1:8000/
 
 ## 配置项目
