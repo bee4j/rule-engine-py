@@ -9,6 +9,14 @@
    - 在Github或Gitee创建一个空项目
    - 在Pycharm社区版下载这个项目
 
+## 环境隔离
+    - 创建虚拟环境：python -m venv ruleenv
+    - 激活虚拟环境：
+        - MacOS环境：source ruleenv/bin/activate
+        - Windows环境：ruleenv\Scripts\activate    操作显示(runenv) PS D:\Projects\rule-engine-py>
+    - 退出虚拟环境：deactivate
+    - 删除虚拟环境：只需删除创建它的文件夹即可?
+
 ## 安装Django 5.1.11
 ### 官网文档：
    - https://www.djangoproject.com
