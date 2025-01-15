@@ -13,7 +13,7 @@
     - 创建虚拟环境：python -m venv ruleenv
     - 激活虚拟环境：
         - MacOS环境：source ruleenv/bin/activate
-        - Windows环境：ruleenv\Scripts\activate    操作显示(runenv) PS D:\Projects\rule-engine-py>
+        - Windows环境：ruleenv\Scripts\activate    操作显示(ruleenv) PS D:\Projects\rule-engine-py>
     - 退出虚拟环境：deactivate
     - 删除虚拟环境：只需删除创建它的文件夹即可?
 
