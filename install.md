@@ -2,7 +2,7 @@
 
 ## 基础环境
      - Python 3.12.6
-     - Django 5.1.11
+     - Django 5.1.5
      - pymysql 1.1.1
      
 ## 环境隔离
@@ -78,7 +78,9 @@
      - **模型同步创建到DB**： python manage.py makemigrations rule
      - **模型同步更新到DB**： python manage.py migrate rule --run-syncdb
      
-## 依赖清单：pip freeze > requirements.txt
+## 依赖清单
+    - pip list
+    - pip freeze > requirements.txt
 
 ## 提交项目：git push
 
