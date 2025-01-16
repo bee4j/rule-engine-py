@@ -27,6 +27,6 @@ urlpatterns = [
     # path("register/", views.register, name="注册"),
     # path("login/", views.login, name="登录"),
     path('admin/', admin.site.urls),
-    path("engine/", include("engine.urls")),
-    path("data/", include("data.urls"))
+    path("rule/", include("rule.urls")),
+    path("engine/", include("engine.urls"))
 ]

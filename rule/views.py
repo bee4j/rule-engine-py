@@ -2,7 +2,7 @@ import json
 from django.core.serializers import serialize
 from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render
-from engine.models import Model
+from rule.models import Model
 
 # Create your views here.
 

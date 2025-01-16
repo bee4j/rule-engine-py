@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from engine.models import Model
+from rule.models import Model
 
 
 # Register your models here.
