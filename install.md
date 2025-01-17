@@ -1,6 +1,9 @@
 # 项目搭建
 
 ## 基础环境
+     - MySQL 8.x
+     - Mongo 6.x
+     - ElasticSearch 7.x
      - Python 3.12.6
      - Django 5.1.5
      - pymysql 1.1.1
