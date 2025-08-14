@@ -12,7 +12,7 @@
      - 创建虚拟环境：python -m venv .venv
      - 激活虚拟环境：
         - MacOS环境：source .venv/bin/activate
-        - Windows环境：.venv\Scripts\activate    操作显示(venv) PS D:\Projects\rule-engine-py>
+        - Windows环境：.venv\Scripts\activate    操作显示(.venv) PS D:\PycharmProjects\bee4j\rule-engine-py>
      - 退出虚拟环境：deactivate
      - 删除虚拟环境：只需删除创建它的文件夹即可?
 
